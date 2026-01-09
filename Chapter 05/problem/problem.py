@@ -134,3 +134,11 @@ print(result_str[-1])
 # 17
 people = ['김승현', '김진호', '강춘자', '이예준', '김현주']
 works = ['청소', '빨래', '설거지']
+
+people = random.sample(people, len(people))
+print(list(itertools.zip_longest(people, works, fillvalue='휴식')))
+
+
+# 18
+import math
+print(math.gcd(200, 80))
